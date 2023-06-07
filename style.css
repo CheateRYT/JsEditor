@@ -1,0 +1,132 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #282c34;
+  color: #abb2bf;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.console-wrapper {
+  background-color: #1e1e1e;
+  color: #abb2bf;
+  border: 1px solid #abb2bf;
+  border-radius: 5px;
+  width: 600px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.console-wrapper h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.console-input {
+  background-color: #282c34;
+  color: #abb2bf;
+  border: none;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.console-output {
+  overflow-y: auto;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #abb2bf;
+  border-radius: 5px;
+}
+
+.command {
+  color: #98c379;
+  margin-bottom: 5px;
+}
+
+.result {
+  color: #61afef;
+  margin-bottom: 5px;
+}
+
+.error {
+  color: #e06c75;
+  margin-bottom: 5px;
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.console-button {
+  background-color: #61afef;
+  color: #282c34;
+  border: none;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.CodeMirror {
+  height: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+} 
+.console-button:hover {
+  background-color: #519fce;
+}
+
+.console-button:active {
+  background-color: #3a87a6;
+}
+@media (max-width: 767px) {
+  .console-wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .console-input,
+  .console-output {
+    width: 100%;
+  }
+}
+
+/* Стили для планшетов и десктопных устройств */
+@media (min-width: 768px) {
+  .console-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .console-input,
+  .console-output {
+    width: 100%;
+  }
+}

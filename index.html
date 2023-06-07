@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Console</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    hljs.highlightAll();
+  </script>
+</head>
+<body>
+  <div class="console-wrapper">
+    <h1>JavaScript Console</h1>
+    <textarea id="inputField" class="console-input" rows="5" autofocus></textarea>
+    <button id="executeButton" class="console-button">Выполнить</button>
+    <button id="downloadButton" class="console-button">Скачать код</button>
+    <div id="output" class="console-output"></div>
+    <div class="background-text">Created By Lev</div>
+  </div>
+
+  <script src="main.js">
+        hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>
